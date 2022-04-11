@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--===============  meta Tag ===============-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--===============  Header Theme ===============-->
+  <!-- <meta name="theme-color" content="#1877F2">  -->
+
+  <title>Weather App</title>
+
+  <!--=============== Google Fonts ===============-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="img/cloud-solid.svg">
+
+  <!--=============== Fontawesome icon ===============-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <!--===============  Wow Css  ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css"
+    integrity="sha512-gFn7XRm5v3GlgOwAQ80SXDT8pyg6uaV9JbW2OkNx5Im2jR8zx2X/3DbHymcZnUraU+klZjRJqNfNkFN7SyR3fg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="Css/main.css">
+
+
+
+</head>
+
+<body>
+
+
+  <div class="card">
+
+    <div class="search">
+      <input type="text" class="search-bar" placeholder="Search">
+      <button><i class="fal fa-search"></i></button>
+    </div>
+
+    <div class="weather loading">
+      <h2 class="city"></h2>
+      <h1 class="temp"></h1>
+      <div class="flex">
+        <img src="https://openweathermap.org/img/wn/50d.png" alt="Humidity" class="icon" />
+        <div class="description"></div>
+      </div>
+      <div class="humidity"></div>
+      <div class="wind"></div>
+    </div>
+  </div>
+
+
+
+  <!--=============== Wow js  ===============-->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+
+  <!--=============== js ===============-->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

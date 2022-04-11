@@ -1,0 +1,126 @@
+/*=============== SCROLL BAR =================*/
+/* ::-webkit-scrollbar{
+  width: 10px;
+  border-radius: 30%;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #000;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #ddd;
+} */
+
+/*=============== BASE =======================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  /* background-image: url('https://source.unsplash.com/random/1600x900/?weather'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 120%;
+}
+
+.card{
+  background-color: #000000d0;
+  color: white;
+  padding: 2rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  margin: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: #fff;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+button:hover{
+  background: #7c7c7c6b;
+}
+
+input.search-bar{
+  border: none;
+  outline: none;
+  padding: 0.4rem 1rem;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: #fff;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100%-100px);
+}
+
+h1.temp{
+  margin: 20px 0;
+}
+
+.description{
+  text-transform: capitalize;
+  margin-left: 5px  ;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.weather.loading{
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading::after{
+  visibility: visible;
+  content: "Loading...";
+  color: #fff;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
