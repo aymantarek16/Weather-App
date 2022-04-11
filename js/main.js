@@ -26,7 +26,8 @@ let weather = {
     document.querySelector(".humidity").innerText = `Humidity : ${humidity}%`;
     document.querySelector(".wind").innerText = `wind speed : ${speed} km/h`;
     document.querySelector(".weather").classList.remove("loading");
-    document.body.style.backgroundImage = "url('https://source.unsplash.com/random/1600x900/?"+ name +"')"
+    document.body.style.backgroundImage =
+      "url('https://source.unsplash.com/random/1600x900/?" + name + "')";
   },
 
   search: function () {
@@ -43,11 +44,9 @@ document.querySelector(".search button").addEventListener("click", () => {
 document.querySelector(".search-bar").addEventListener("keyup", (event) => {
   if (event.key == "Enter") {
     weather.search();
-    document.querySelector(".search-bar").value = ""
+    document.querySelector(".search-bar").value = "";
   }
 });
 
-
 // Show Result on the web page
 weather.fetchWeather("cairo");
-
