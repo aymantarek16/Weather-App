@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -25,17 +24,17 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: #222;
   /* background-image: url('https://source.unsplash.com/random/1600x900/?weather'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   font-size: 120%;
-  overflow: hidden !important; 
+  overflow: hidden !important;
 }
 
-.card{
+.card {
   background-color: #000000d0;
   color: white;
   padding: 2rem;
@@ -45,13 +44,13 @@ body {
   margin: 1rem;
 }
 
-.search{
+.search {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-button{
+button {
   margin: 0.5rem;
   border-radius: 50%;
   border: none;
@@ -61,14 +60,14 @@ button{
   background: #7c7c7c2b;
   color: #fff;
   cursor: pointer;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
-button:hover{
+button:hover {
   background: #7c7c7c6b;
 }
 
-input.search-bar{
+input.search-bar {
   border: none;
   outline: none;
   padding: 0.4rem 1rem;
@@ -80,31 +79,31 @@ input.search-bar{
   width: calc(100%-100px);
 }
 
-h1.temp{
+h1.temp {
   margin: 20px 0;
 }
 
-.description{
+.description {
   text-transform: capitalize;
-  margin-left: 5px  ;
+  margin-left: 5px;
 }
 
-.flex{
+.flex {
   display: flex;
   align-items: center;
 }
 
 /*=============== Media Query =======================*/
 
- @media screen and (max-width:500px) {
-   button{
-      background-color: transparent;
-   }
-   button:hover{
-     background-color: transparent;
-   }
+@media screen and (max-width: 500px) {
+  button {
+    background-color: transparent;
+  }
+  button:hover {
+    background-color: transparent;
+  }
 
-   button i {
-     font-size: 18px;
-   }
- }
+  button i {
+    font-size: 18px;
+  }
+}
