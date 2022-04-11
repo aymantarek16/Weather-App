@@ -31,6 +31,7 @@ let weather = {
 
   search: function () {
     this.fetchWeather(document.querySelector(".search-bar").value);
+    document.querySelector(".search-bar").value = "";
   },
 };
 
@@ -43,7 +44,6 @@ document.querySelector(".search button").addEventListener("click", () => {
 document.querySelector(".search-bar").addEventListener("keyup", (event) => {
   if (event.key == "Enter") {
     weather.search();
-    document.querySelector(".search-bar").value = "";
   }
 });
 
