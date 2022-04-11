@@ -47,6 +47,7 @@ body {
   background-size: cover;
   background-position: center;
   font-size: 120%;
+  
 }
 
 .card{
@@ -108,7 +109,7 @@ h1.temp{
   align-items: center;
 }
 
-.weather.loading{
+/* .weather.loading{
   visibility: hidden;
   max-height: 20px;
   position: relative;
@@ -123,4 +124,4 @@ h1.temp{
   top: 0;
   left: 10px;
 }
-
+ */
