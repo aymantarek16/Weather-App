@@ -36,12 +36,14 @@ let weather = {
 };
 
 // Search by click on searchBox
-document.querySelector(".search button").addEventListener("click", () => {
+let searchButton = document.querySelector(".search button");
+searchButton.addEventListener("click", () => {
   weather.search();
 });
 
 // Search by click on enter key on keyboard
-document.querySelector(".search-bar").addEventListener("keyup", (event) => {
+let searchBar = document.querySelector(".search-bar");
+searchBar.addEventListener("keyup", (event) => {
   if (event.key == "Enter") {
     weather.search();
   }
