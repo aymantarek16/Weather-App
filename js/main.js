@@ -1,4 +1,4 @@
-// build weather app object
+// build weather app with ajax
 let weather = {
   apiKey: "c18ff0c308cc68880247aff82c2963f7",
 
